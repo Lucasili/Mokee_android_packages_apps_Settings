@@ -256,7 +256,7 @@ public class SettingsActivity extends Activity
             R.id.account_settings,
             R.id.system_section,
             R.id.date_time_settings,
-            R.id.mokee_center,
+//            R.id.mokee_center,
             R.id.about_settings,
             R.id.accessibility_settings,
             R.id.print_settings,
@@ -1283,11 +1283,11 @@ public class SettingsActivity extends Activity
                             UserManager.DISALLOW_DEBUGGING_FEATURES)) {
                         removeTile = true;
                     }
-                } else if (id == R.id.mokee_center) {
+                } /*else if (id == R.id.mokee_center) {
                     if (UserHandle.myUserId() != UserHandle.USER_OWNER) {
                         removeTile = true;
                     }
-                }
+                }*/
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
                         && !ArrayUtils.contains(SETTINGS_FOR_RESTRICTED, id)) {
